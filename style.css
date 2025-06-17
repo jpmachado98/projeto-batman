@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black
+}
+
+header {
+    background-color: black;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "font-family: 'Kdam Thmor Pro', sans-serif;";
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+    
+
+}
+
+li:hover{
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner{
+    background-image: url('https://i.redd.it/6092ltrt8nt71.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.trailer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+
+}
+
+.descrição {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+    width: 70%;
+
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family:'Kdam Thmor Pro', sans-serif; 
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1621450015740-B96IV05LF198C300TK0M/the-batman-gets-a-new-image-of-robert-pattinson-in-costume-and-promo-poster-art.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://criticalhits.com.br/wp-content/uploads/2022/03/zoe-kravitz-mulher-gato.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://i.redd.it/r96po045tlu81.png');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+       width: 100%;
+       height: 400px;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .descrição {
+        width: 100%;
+    }
+    
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+ 
+}
+
+.contato-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://4kwallpapers.com/images/wallpapers/the-batman-2022-movies-red-background-dark-background-dc-7840x4320-7414.jpg'); /* imagem do Batman */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.75); /* fundo escuro translúcido por cima da imagem */
+  width: 60%;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  
+  
+}
+
+.contacto {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+}
+
+.button {
+  padding: 10px;
+  background-color: #d21617;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.fotos-page {
+  background-color: black;
+  color: white;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.page-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2.2rem;
+  color: #d21617; /* vermelho Batman */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px; /* espaço ao redor da galeria */
+}
+
+.photo-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d21617aa;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #d21617ff;
+}
+
+.photo-card:last-child {
+  grid-column: 1 / -1; /* ocupa todas as colunas da grid */
+  height: 700px; /* deixa ela mais alta que as outras */
+  background-position: center top;
+
+}
+ 
+
+
